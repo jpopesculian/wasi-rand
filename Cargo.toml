@@ -5,6 +5,8 @@ authors = ["Julian Popescu <jpopesculian@gmail.com>"]
 edition = "2018"
 license = "MIT"
 description = "An random number generator implementation for WASI"
+homepage = "https://github.com/jpopesculian/wasi-rand"
+repository = "https://github.com/jpopesculian/wasi-rand"
 
 [dependencies]
 wasi = "0.9"
