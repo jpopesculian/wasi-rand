@@ -17,7 +17,7 @@ use rand_core::impls::{next_u32_via_fill, next_u64_via_fill};
 use rand_core::{CryptoRng, Error, RngCore};
 use wasi::random_get;
 
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug, Default)]
 pub struct WasiRng;
 
 impl RngCore for WasiRng {
