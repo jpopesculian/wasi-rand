@@ -10,7 +10,7 @@
 //! println!("random number: {}", rng.next_u32());
 //! ```
 
-#![no_std]
+#![cfg_attr(not(feature = "std"), no_std)]
 
 use core::num::NonZeroU32;
 use rand_core::impls::{next_u32_via_fill, next_u64_via_fill};

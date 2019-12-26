@@ -11,3 +11,7 @@ repository = "https://github.com/jpopesculian/wasi-rand"
 [dependencies]
 wasi = "0.9"
 rand_core = "0.5"
+
+[features]
+default = ["std"]
+std = ["wasi/std"]
